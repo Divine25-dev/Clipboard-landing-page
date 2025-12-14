@@ -1,0 +1,147 @@
+:root {
+  --green: hsl(171, 66%, 44%);
+  --blue: hsl(233, 100%, 69%);
+  --dark: hsl(210, 10%, 33%);
+  --gray: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Position the bottom-left logo */
+.bottom-logo {
+  position: fixed;       /* Stays in place even when scrolling */
+  bottom: 20px;          /* Distance from the bottom */
+  left: 20px;            /* Distance from the left */
+  width: 50px;           /* Adjust size as needed */
+  height: auto;
+  z-index: 1000;         /* Make sure it’s above other content */
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  color: var(--dark);
+  text-align: center;
+}
+
+section, header {
+  padding: 4rem 1.5rem;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+p {
+  color: var(--gray);
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap; /* important for mobile */
+}
+
+.logo-row img {
+  max-width: 120px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+.ios { background: var(--green); }
+.mac { background: var(--blue); }
+
+.feature-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.workflow-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer {
+  background: #f5f6f8;
+  padding: 3rem 1.5rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0rem 1rem;
+  padding: 0;
+}
+
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+  color: hsl(171, 66%, 44%); /* green from style guide */
+}
+
+
+.social-icons {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  transition: filter 0.3s ease, border-color 0.3s ease;
+}
+
+.social-icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(79%)
+          saturate(428%) hue-rotate(130deg);
+}
+
+.social-icons a:hover {
+  border-color: hsl(171, 66%, 44%);
+}
+
+
+
+/* DESKTOP */
+@media (min-width: 900px) {
+  .feature-grid {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .workflow-grid {
+    flex-direction: row;
+  }
+}
