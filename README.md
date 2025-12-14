@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Divine25-dev/Clipboard-landing-page)
-- Live Site URL: [Add live site URL here](https://gilded-meringue-606373.netlify.app/)
+- Live Site URL: (https://gilded-meringue-606373.netlify.app/)
 
 ## My process
 
