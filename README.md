@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](github.com/Divine25-dev/clipboard-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Divine25-dev/Clipboard-landing-page)
+- Live Site URL: [Add live site URL here](https://gilded-meringue-606373.netlify.app/)
 
 ## My process
 
